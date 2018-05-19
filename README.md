@@ -219,10 +219,8 @@ and ${SDL2PP_LIBRARIES} variables for your project. You will then
 be able to use them as usual:
 
 ```cmake
-INCLUDE_DIRECTORIES(${SDL2PP_INCLUDE_DIRS})
-
 ADD_EXECUTABLE(mytarget ...)
-TARGET_LINK_LIBRARIES(mytarget ${SDL2PP_LIBRARIES})
+TARGET_LINK_LIBRARIES(mytarget SDL2pp)
 ```
 
 If bundled, libSDL2pp does not build examples and becomes a static
