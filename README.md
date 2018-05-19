@@ -157,7 +157,7 @@ Following variables may be supplied to CMake to affect build:
 * ```SDL2PP_WITH_MIXER``` - enable SDL_mixer support (default ON)
 * ```SDL2PP_WITH_TTF``` - enable SDL_ttf support (default ON)
 * ```SDL2PP_WITH_WERROR``` - treat warnings as errors, useful for CI (default OFF)
-* ```SDL2PP_CXXSTD``` - override C++ standard (default C++11). With C++1y some additional features are enabled such as usage of [[deprecated]] attribute and using stock experimental/optional from C++ standard library
+* ```SDL2PP_CXXSTD``` - override C++ standard (default C++11). With C++14 some additional features are enabled such as usage of [[deprecated]] attribute and using stock experimental/optional from C++ standard library
 * ```SDL2PP_WITH_EXAMPLES``` - enable building example programs (only for standalone build, default ON)
 * ```SDL2PP_WITH_TESTS``` - enable building tests (only for standalone build, default ON)
 * ```SDL2PP_STATIC``` - build static library instead of shared (only for standalone build, default OFF)

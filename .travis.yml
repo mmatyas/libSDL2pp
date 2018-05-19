@@ -5,15 +5,15 @@ matrix:
   include:
     # Note that we stick some additional variations to some builds
     - compiler: gcc
-      env: CXXSTD=c++11 BUILD_COVERAGE=yes
+      env: CXXSTD=11 BUILD_COVERAGE=yes
     - compiler: gcc
-      env: CXXSTD=c++1y
+      env: CXXSTD=14
     - compiler: clang
-      env: CXXSTD=c++11
+      env: CXXSTD=11
     - compiler: clang
-      env: CXXSTD=c++1y BUILD_NOOPTLIBS=yes
+      env: CXXSTD=14 BUILD_NOOPTLIBS=yes
     - compiler: clang
-      env: CXXSTD=c++1y BUILD_STATIC=yes
+      env: CXXSTD=14 BUILD_STATIC=yes
 before_install:
   - sudo add-apt-repository --yes ppa:zoogie/sdl2-snapshots
   - sudo apt-get update -qq
