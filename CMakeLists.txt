@@ -95,12 +95,7 @@ ELSE(MSVC)
 	#APPEND_CXX_FLAG_IF_SUPPORTED(-Wno-padded SDL2PP_WARNINGS)
 ENDIF(MSVC)
 
-INCLUDE(CheckCompile)
-CHECK_COMPILE(
-	SDL2PP_WITH_EXPERIMENTAL_OPTIONAL
-	"#include <experimental/optional>\nint main() { std::experimental::optional<int> o; return !o; }"
-	"experimental/optional header"
-)
+SET(SDL2PP_WITH_EXPERIMENTAL_OPTIONAL FALSE)
 
 IF(SDL2PP_WITH_WERROR)
 	SET(SDL2PP_WARNINGS ${SDL2PP_WARNINGS} ${SDL2PP_WERROR_FLAG})
